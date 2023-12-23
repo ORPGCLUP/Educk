@@ -4,13 +4,17 @@ import { Navbar as BootstrapNavbar, Container } from 'react-bootstrap';
 import '../../styles.css';
 
 
+
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const Navbar: React.FunctionComponent = () => {
   return (
     <div className="Navbar">
       <BootstrapNavbar expand="lg">
         <Container>
-          <BootstrapNavbar.Brand>Educk</BootstrapNavbar.Brand>
+          <BootstrapNavbar.Brand className="container-Navbar">
+            <div className="navbar-Logo"></div>
+          </BootstrapNavbar.Brand>
+          
         </Container>
       </BootstrapNavbar>
     </div>
